@@ -1,0 +1,13 @@
+# AutoTranslator — Python 3.11 (winsdk/argos не собираются на 3.14)
+PyQt6
+requests            # онлайн-движок (Google, быстрый JSON-адрес)
+deep-translator     # запасной путь онлайн-движка
+argostranslate      # офлайн-движок (локальные модели)
+winsdk              # Windows.Media.Ocr — OCR области экрана
+mss                 # захват области экрана
+Pillow              # обработка/предобработка скриншота перед OCR
+
+# --- необязательные (приложение работает и без них) ---
+pyttsx3             # озвучка перевода (TTS). Нет пакета — кнопка озвучки скрыта
+pywin32             # нужен pyttsx3 на Windows (драйвер SAPI5 / pythoncom)
+keyboard            # глобальные горячие клавиши поверх других окон

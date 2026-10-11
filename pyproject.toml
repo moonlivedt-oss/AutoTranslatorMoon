@@ -1,0 +1,20 @@
+[project]
+name = "autotranslator"
+dynamic = ["version"]
+description = "Плавающий переводчик на 11 языков: текст, OCR экрана, мост для Ren'Py-игр"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-exclude = ["*.backup-*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "UP"]
+ignore = ["E501"]  # длинные строки с русским текстом не рвём ради линтера
+
+[tool.ruff.lint.isort]
+known-first-party = ["autotranslator"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
