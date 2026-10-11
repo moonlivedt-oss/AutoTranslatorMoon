@@ -304,7 +304,7 @@ class MainWindow(
         self.game_chip = QLabel("")
         self.game_chip.setObjectName("chip")
         self.game_chip.setToolTip(
-            "Игра с модулем перевода из RenpyTestMenu: реплики приходят\n"
+            "Игра с модулем перевода из Test Menu Moon: реплики приходят\n"
             "прямо из движка, перевод показывается в самой игре."
         )
         self.game_fix_btn = self._reg_tool(
